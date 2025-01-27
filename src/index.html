@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search images</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" defer src="./main.js"></script>
+  </head>
+  <body>
+    <main>
+      <form class="search-form js-search-form">
+        <input
+          class="query-input js-query-input"
+          type="text"
+          placeholder="Search images"
+          name="user_query"
+          autocomplete="off"
+        />
+
+        <button class="submit-btn js-submit-btn" type="submit">Search</button>
+      </form>
+      <ul class="query-gallery js-gallery"></ul>
+      <button class="show-more-btn js-show-more-btn is-hidden" type="button">
+        Load more
+      </button>
+      <span class="loader"></span>
+    </main>
+  </body>
+</html>
